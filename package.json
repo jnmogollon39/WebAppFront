@@ -20,5 +20,15 @@
   "bugs": {
     "url": "https://github.com/jnmogollon39/WebAppFront/issues"
   },
+
+  "dependencies": {
+  "react": "^22.x.x",
+  "react-dom": "22.x.x",
+  "react-scripts": "5.0.1"
+},
+
   "homepage": "https://github.com/jnmogollon39/WebAppFront#readme"
+
+  
+
 }
