@@ -1,11 +1,11 @@
 const http = require('http');
 const hostname = '127.0.0.1';
-const port = process.env.port || 8080;
+const port = process.env.port || 3000;
 
 const server = http.createServer((req, res) => {
     res.StatusCode = 200;
-    res.setHeader('Content-Type', 'test/plain');
-    res.end('Hola mundo');
+    const msg = 'Hola mundo\n';
+    res.end(msg);
 });
 
 server.listen(port, hostname, () => {
