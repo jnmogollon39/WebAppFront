@@ -1,34 +1,39 @@
 {
   "name": "webappfront",
-  "version": "1.0.0",
-  "description": "Front",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-    
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jnmogollon39/WebAppFront.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "keywords": [],
-  "author": "Jesus Mogollon",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jnmogollon39/WebAppFront/issues"
-  },
-
-  "dependencies": {
-  "react": "^18.x.x",
-  "react-dom": "18.x.x",
-  "react-scripts": "5.0.1"
-},
-
-  "homepage": "https://github.com/jnmogollon39/WebAppFront#readme"
-
-  
-
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
