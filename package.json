@@ -22,8 +22,8 @@
   },
 
   "dependencies": {
-  "react": "^22.x.x",
-  "react-dom": "22.x.x",
+  "react": "^18.x.x",
+  "react-dom": "18.x.x",
   "react-scripts": "5.0.1"
 },
 
