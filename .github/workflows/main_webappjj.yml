@@ -31,7 +31,7 @@ jobs:
       - name: Zip artifact for deployment
         run: |
           mkdir deploy
-          cp -r build/* deploy/
+          cp -r build deploy/
           cp server.js package.json package-lock.json deploy/
           cd deploy
           zip -r ../release.zip .
