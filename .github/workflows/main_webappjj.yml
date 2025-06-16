@@ -26,12 +26,7 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm install
-          npm run build
-
-      - name: Install dependencies
-        run: |
-          cd deploy
-          npm install    
+          npm run build  
 
       - name: Zip artifact for deployment
         run: |
@@ -40,6 +35,11 @@ jobs:
           cp server.js package.json package-lock.json deploy/
           cd deploy
           zip -r ../release.zip .
+
+      - name: Install dependencies
+        run: |
+          cd deploy
+          npm install 
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
