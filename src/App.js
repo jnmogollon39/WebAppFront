@@ -20,7 +20,7 @@ function App() {
         const data = await response.json();
         setMensaje(`Respuesta: ${data.mensaje}`);
       } else {
-        setMensaje('Erroren la solicitud');
+        setMensaje('Error en la solicitud');
       }
     } catch (error) {
       setMensaje('Error en la conexión con Azure Function');
