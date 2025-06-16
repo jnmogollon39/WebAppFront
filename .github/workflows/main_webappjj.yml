@@ -34,12 +34,8 @@ jobs:
           cp -r build deploy/
           cp server.js package.json package-lock.json deploy/
           cd deploy
+          npm install
           zip -r ../release.zip .
-
-      - name: Install dependencies
-        run: |
-          cd deploy
-          npm install 
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
