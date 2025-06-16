@@ -8,7 +8,7 @@ function App() {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://intgrfunction.azurewebsites.net', {
+      const response = await fetch('https://appfunctionapi.azurewebsites.net/api/formulario', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
