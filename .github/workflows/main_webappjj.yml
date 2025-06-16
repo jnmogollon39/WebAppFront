@@ -31,7 +31,7 @@ jobs:
       - name: Zip artifact for deployment
         run: |
           cd build
-          zip -r ../release.zip .
+          zip -r release.zip build server.js package.josn package-lock.json
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
